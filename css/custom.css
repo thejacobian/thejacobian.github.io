@@ -1,0 +1,39 @@
+/* your styles go here */
+
+section {
+  padding: 100px 0 !important;
+}
+
+#navbar-name {
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+}
+
+.nav-link {
+  font-style: normal !important;
+}
+
+.copyright {
+  font-style: normal !important;
+}
+
+.project-thumb {
+  filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+  filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .4s ease-in-out;  
+}
+
+.project-thumb:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.05);
+}
+
+.img-icon {
+  width: 55px !important;
+}
+
+#denver-icon {
+  height: 55px !important;
+}
