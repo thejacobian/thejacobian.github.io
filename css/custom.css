@@ -1,5 +1,4 @@
-/* your styles go here */
-
+/* custom styles go here */
 section {
   padding: 100px 0 !important;
 }
@@ -36,4 +35,55 @@ section {
 
 #denver-icon {
   height: 55px !important;
+}
+
+#mobile {
+  display: none;
+}
+
+@media only screen and
+(max-width: 420px) {
+
+  #greeting-intro {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  #byline-intro {
+    padding-top: 20px;
+    text-align: center;
+  }
+  #more-intro {
+    display:none;
+  }
+
+  #desktop-tablet {
+    display: none;
+  }
+
+  #mobile {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  #navbar-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and
+(max-width: 770px) {
+
+  #headshot-container {
+    max-width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .interest-div {
+    padding-top: 20px;
+  }
 }

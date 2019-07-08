@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jacob Shelton | Software Developer & Engineer</title>
+    <title>Jacob Shelton | Software Developer &amp; Engineer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -30,15 +30,15 @@
     <link rel="canonical" href="https://jakesshelton.com">
   </head>
   <body>
-    <section id="intro" style="background-image: url('img/VertRockFog.png');" class="intro">       
+    <section id="intro" style="background-image: url('img/vertrockfog-small.png');" class="intro">       
       <div class="overlay"></div>
       <div class="content">
         <div class="container clearfix">
           <div class="row">
             <div class="col-lg-8 col-md-12 mx-auto">
-              <p class="">Hello there, so happy you stopped by!</p>
-              <h1>I am Jacob Shelton and I write code.</h1>
-              <p class="">I am a back-end &amp; full stack developer with 10+ years experience in software testing and internet technologies. I'm currently seeking to integrate my background in software compliance testing with the cutting-edge skills acquired at General Assembly to develop exceptional RESTful APIs &amp; responsive applications.</p>
+              <p id="greeting-intro">Hello there, so happy you stopped by!</p>
+              <h1 id="byline-intro">I am Jacob Shelton and I write code.</h1>
+              <p id="more-intro">I am a back-end &amp; full stack developer with 10+ years experience in software testing and internet technologies. I'm currently seeking to integrate my background in software compliance testing with the cutting-edge skills acquired at General Assembly to develop exceptional RESTful APIs &amp; responsive applications.</p>
             </div>
           </div>
         </div>
@@ -48,14 +48,16 @@
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-expand-lg">
-        <div class="container"><a href="#intro" class="navbar-brand link-scroll"><strong id="navbar-name">Jacob Shelton</strong> | Software Developer & Engineer</a>
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+        <div class="container">
+          <a id="desktop-tablet" href="#intro" class="navbar-brand link-scroll"><strong id="navbar-name">Jacob Shelton</strong> | Software Developer &amp; Engineer</a>
+          <a id="mobile" href="#intro" class="navbar-brand link-scroll"><strong id="navbar-name">Jacob Shelton</strong> | Software Developer</a>
+          <button id="navbar-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Home</a></li>
-              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About </a></li>
+              <li class="nav-item"><a href="#portfolio" class="nav-link link-scroll">Projects</a></li>
               <li class="nav-item"><a href="#services" class="nav-link link-scroll">Skills</a></li>
-              <li class="nav-item"><a href="#portfolio" class="nav-link link-scroll">Portfolio</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About </a></li>
               <li class="nav-item"><a href="#text" class="nav-link link-scroll">Interests</a></li>
               <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
               <li class="nav-item"><a href="img/sheltonresume.pdf" class="nav-link link-scroll" target="_blank" rel="noopener noreferrer">Resume</a></li>
@@ -64,28 +66,50 @@
         </div>
       </nav>
     </header>
-    <!-- about-->
-    <section id="about" class="text">
-      <div class="container">
+    <!-- Portfolio / Projects / gallery-->
+    <section id="portfolio" class="gallery">
+      <div class="container clearfix">
         <div class="row">
-          <div class="col-lg-6">
-            <h2 class="heading">About me</h2>
-<!--             <p class="lead">Get to know me</p> -->
-            <p>In June 2019 I graduated from an intensive 12 week 450+ hour software engineering program at General Assembly where I learned to develop web apps primarily using the MERN stack but also wrote RESTful APIs in Java/Spring and Python/Flask. Prior to attending GA, I was most recently a project manager at Gaming Laboratories International, an industry-leading test lab in the internet gambling space.
-            </p>
-            <p>I began my career at GLI as a Test Engineer after obtaining a E.E. degree from CSU, but soon was promoted to senior engineer and transferred to the newly formed internet gaming team. My skills were noticed after I took initiative to greatly improve our test results and archival processes by developing GLI Project Suite, a collection of C# .NET apps for Windows. This senior position took me to Italy, Tel Aviv, Jamaica, and Canada as I developed test suites, led on-site audit teams, and trained both regulators and new hires on all things iGaming. By the end of my time at GLI, I was responsible for 16 engineers around the world and together we certified 200+ gaming projects annually for major suppliers like Bally, Williams, FanDuel, and Pokerstars.
-            </p>
-            <p>Despite continued success in this managerial role, I realized I had drifted away from the technical testing and software development aspects of the job I had truly loved which led me to pursue the SEI program at GA. Having just completed this immersive, I am now looking to find a new career that resonates with my values and goals where I can leverage my considerable experience to develop DRY, clean, & responsive full stack applications.
-            </p>
-          </div>
-          <div class="col-lg-5 mx-auto">
-            <p><img src="img/jssprofbw.png" alt="" class="img-fluid rounded-circle"></p>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-md-12 col-lg-8">
+                <h2 class="heading">Projects</h2>
+                <p>At GA I had the opportunity to work with a number of technologies including: React, Node, Express, Mongo, Mongoose, Java, Spring, MySQL, Python, Flask, Ruby, and Sinatra. I also explored the intricacies of Canvas, AWS ECR, Docker, and Oauth on my own, as well as the Spotify API in my capstone project, DRINKJAMZ. Feel free to browse some of my deployed projects below.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box project-thumb"><a href="https://drinkjamz.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/drinkjamzkey.png" alt="DRNKJMZ" class="img-fluid"></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box project-thumb"><a href="https://musicbucketlistreact.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/musicbucketlistkey.png" alt="Music Bucketlist" class="img-fluid"></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box project-thumb"><a href="https://thejacobian.github.io/spy-hunter-clone" target="_blank" rel="noopener noreferrer"><img src="img/spyhunterkey.png" alt="Block Hunter" class="img-fluid"></a></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box project-thumb"><a href="http://pokemonbattlecardgame.s3-website.us-east-2.amazonaws.com" target="_blank" rel="noopener noreferrer"><img src="img/pokemonbattlekey.png" alt="Pokemon Battle" class="img-fluid"></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box project-thumb"><a href="https://robopet.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/robopetkey.png" alt="image" class="img-fluid"></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box project-thumb"><a href="https://dreamspaceapp.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/dreamspacekey.png" alt="image" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- about end-->
-    <!-- Services-->
+    <!-- Portfolio / gallery end-->
+    <!-- Services / Skills-->
     <section id="services" style="background-color: #eee">
       <div class="container">
         <div class="row services">
@@ -142,55 +166,32 @@
       </div>
     </section>
     <!-- Services end-->
-    
-    <!-- Portfolio / gallery-->
-    <section id="portfolio" class="gallery">
-      <div class="container clearfix">
+    <!-- About-->
+    <section id="about" class="text">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-md-12 col-lg-8">
-                <h2 class="heading">Projects</h2>
-                <p>At GA I had the opportunity to work with a number of technologies including: React, Node, Express, Mongo, Mongoose, Java, Spring, MySQL, Python, Flask, Ruby, and Sinatra. I also explored the intracicies of Canvas, AWS, Docker, and Oauth on my own, as well as the Spotify API in my capstone project, DRINKJAMZ. Feel free to browse some of my deployed projects below.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="box project-thumb"><a href="https://drinkjamz.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/drinkjamzkey.png" alt="DRNKJMZ" class="img-fluid"></a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box project-thumb"><a href="https://musicbucketlistreact.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/musicbucketlistkey.png" alt="Music Bucketlist" class="img-fluid"></a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box project-thumb"><a href="https://thejacobian.github.io/spy-hunter-clone" target="_blank" rel="noopener noreferrer"><img src="img/spyhunterkey.png" alt="Block Hunter" class="img-fluid"></a></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="box project-thumb"><a href="http://pokemonbattlecardgame.s3-website.us-east-2.amazonaws.com" target="_blank" rel="noopener noreferrer"><img src="img/pokemonbattlekey.png" alt="Pokemon Battle" class="img-fluid"></a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box project-thumb"><a href="https://robopet.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/robopetkey.png" alt="image" class="img-fluid"></a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box project-thumb"><a href="https://dreamspaceapp.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="img/dreamspacekey.png" alt="image" class="img-fluid"></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-6">
+            <h2 class="heading">About me</h2>
+<!--             <p class="lead">Get to know me</p> -->
+            <p>In June 2019 I graduated from an intensive 12 week 450+ hour software engineering program at General Assembly where I learned to develop web apps primarily using the MERN stack but also wrote RESTful APIs in Java/Spring and Python/Flask. Prior to attending GA, I was most recently a project manager at Gaming Laboratories International, an industry-leading test lab in the internet gambling space.
+            </p>
+            <p>I began my career at GLI as a Test Engineer after obtaining a E.E. degree from CSU, but soon was promoted to senior engineer and transferred to the newly formed internet gaming team. My skills were noticed after I took initiative to greatly improve our test results and archival processes by developing GLI Project Suite, a collection of C# .NET apps for Windows. This senior position took me to Italy, Tel Aviv, Jamaica, and Canada as I developed test suites, led on-site audit teams, and trained both regulators and new hires on all things iGaming. By the end of my time at GLI, I was responsible for 16 engineers around the world and together we certified 200+ gaming projects annually for major suppliers like Bally, Williams, FanDuel, and Pokerstars.
+            </p>
+            <p>Despite continued success in this managerial role, I realized I had drifted away from the technical testing and software development aspects of the job I had truly loved which led me to pursue the SEI program at GA. Having just completed this immersive, I am now looking to find a new career that resonates with my values and goals where I can leverage my considerable experience to develop DRY, clean, & responsive full stack applications.
+            </p>
+          </div>
+          <div class="col-lg-5 mx-auto">
+            <p id="headshot-container"><img src="img/jssprofbw.png" alt="" class="img-fluid rounded-circle"></p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Portfolio / gallery end-->
-    <!-- text page-->
+    <!-- About end-->
+    <!-- Text / Interests page-->
     <section id="text" class="text-page section-inverse">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 interest-div">
             <h2 class="heading">Interests</h2>
             <div class="row">
               <div class="col-md-6">
@@ -199,7 +200,7 @@
                 <h5>Woodhouse Rock Band</h5>
                 <p>I am a singer-songwriter in a bluesy-alt-rock band with my childhood friends called Woodhouse — not to be confused with Woodhouse Day Spa, which is also great. You can check out our music at <a href="https://woodhousedenver.com" target="_blank" rel="noopener noreferrer" style="color: #fff;">woodhousedenver.com</a> and our latest album on <a href="https://open.spotify.com/album/23i2vQq54rTFP0QoZIgCh4" target="_blank" rel="noopener noreferrer" style="color: #fff;">Spotify.</a> </p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 interest-div">
                 <div class="icon"><img id=denver-icon src="img/denvericon.png" class="fa"></div>
                 <br>
                 <h5>Denver Urban Gardens</h5>
@@ -210,8 +211,8 @@
         </div>
       </div>
     </section>
-    <!-- text page end-->
-    <!-- contact-->
+    <!-- Text page end-->
+    <!-- Contact page-->
     <section id="contact" style="background-color: #fff;" class="text-page pb-4"> 
       <div class="container">
         <div class="row">
@@ -252,8 +253,8 @@
               <div class="col-lg-6" id="contact-blurb">
                 <br><br><br>
                 <p>Thanks so much for visiting my portfolio site!</p>
-                <p>Feel free to fill out the form to the right to share your contact details with me and we can stay in touch.</p>
-                <p>Alternatively, just click the email or Google+ icon below to open gmail and drop me a line! </p>
+                <p>Feel free to complete the form to share your contact details with me and we can stay in touch.</p>
+                <p>Alternatively, just click the email icon below to open Gmail and drop me a line! </p>
                 <br><br><br>
                 <p class="social">
                   <a href="https://www.facebook.com/jake.shelton.906" title="facebook" class="facebook">
@@ -262,11 +263,14 @@
                   <a href="https://twitter.com/thejacobianJS" title="twitter" class="twitter">
                     <i class="fa fa-twitter"></i>
                   </a>
-                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jake.s.shelton@gmail.com&su=Visited your portfolio site&body=" title="" class="gplus">
-                    <i class="fa fa-google-plus"></i>
+                  <a href="https://www.linkedin.com/in/thejacobian" title="linkedin" class="linkedin">
+                    <img src="img/linkedin-closecrop-64px.png" alt="LIMark" class="fa img-fluid">
                   </a>
+                  <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jake.s.shelton@gmail.com&su=Visited your portfolio site&body=" title="" class="gplus">
+                    <i class="fa fa-google-plus"></i>
+                  </a> -->
                   <a href="https://github.com/thejacobian" title="github" class="github">
-                    <img src="img/GitHub-LessDark-64px.png" alt="GitHubMark" class="fa img-fluid">
+                    <img src="img/github-lessdark-64px.png" alt="GitHubMark" class="fa img-fluid">
                   </a>
                   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jake.s.shelton@gmail.com&su=Visited your portfolio site&body=" title="" class="email">
                     <i class="fa fa-envelope"></i>
@@ -278,16 +282,19 @@
         </div>
       </div>
     </section>
+    <!-- Contact page end-->
+    <!-- Map page-->
     <div id="map"></div>
+    <!-- Text page end-->
     <footer style="background-color: #111;">
       <div class="container"> 
         <div class="row copyright">
-          <div class="col-md-6">
-            <p class="mb-md-0 text-center text-md-left">&copy;2019 Jacob Shelton</p>
+          <div class="col-lg-12">
+            <p class="mb-md-0 text-center text-md-center">&copy;2019 Jacob Shelton</p>
           </div>
-          <div class="col-md-6 text-md-right">
+          <!-- <div class="col-md-6 text-md-right">
             <a id="js-li-link" href="https://www.linkedin.com/in/thejacobian" target="_blank" rel="noopener noreferrer"><img id="js-li-btn" src="img/liprofilebtnthumb.png" alt="Click to visit my LinkedIn" title="LIViewMyProfile"></a>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
