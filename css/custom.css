@@ -77,13 +77,17 @@ section {
 @media only screen and
 (max-width: 770px) {
 
+  .interest-div {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and
+(max-width: 992px) {
+
   #headshot-container {
     max-width: 475px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .interest-div {
-    padding-top: 20px;
   }
 }
