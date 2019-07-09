@@ -48,6 +48,12 @@ section {
   display: none;
 }
 
+#headshot-container {
+  width: 100%;
+  margin-right: 0;
+  text-align: center;
+}
+
 @media only screen and
 (max-width: 420px) {
 
@@ -86,15 +92,5 @@ section {
 
   .interest-div {
     padding-top: 20px;
-  }
-}
-
-@media only screen and
-(max-width: 992px) {
-
-  #headshot-container {
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
