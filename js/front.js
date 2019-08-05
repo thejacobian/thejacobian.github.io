@@ -53,7 +53,7 @@ function map() {
 
     const map = L.map(mapId, {
       center: mapCenter,
-      zoom: 13,
+      zoom: 12,
       dragging,
       tap,
       scrollWheelZoom: false,
